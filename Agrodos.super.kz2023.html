@@ -2149,9 +2149,64 @@ background-repeat: repeat
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 </head>
+<!DOCTYPE html>
+<html lang="en">
 
-<body
-class="home privacy-policy page-template page-template-elementor_canvas page page-id-3 wp-embed-responsive theme-oceanwp woocommerce-no-js oceanwp-theme dropdown-mobile has-header-video separate-layout no-header-border default-breakpoint content-full-width content-max-width page-header-disabled pagination-left has-grid-list account-original-style elementor-beta e-lazyload elementor-default elementor-template-canvas elementor-kit-410 elementor-page elementor-page-3 pagelayer-body">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Truck</title>
+<style>
+/* Анимация движения грузовика */
+@keyframes truckMove {
+0% {
+transform: translateX(-10px);
+}
+50% {
+        transform: translateX(10px);
+      }
+      100% {
+        transform: translateX(-10px);
+      }
+    }
+
+    /* Анимация пульсации */
+@keyframes pulse {
+      0% {
+        transform: scale(1);
+}
+50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .elementor-icon.elementor-divider__element {
+      animation: truckMove 1.5s infinite;
+      /* грузовик двигается влево и вправо */
+}
+
+.elementor-icon.elementor-divider__element svg {
+      animation: pulse 2s infinite;
+      /* пульсация */
+    }
+</style>
+</head>
+
+<body>
+<div class="elementor-icon elementor-divider__element">
+<svg aria-hidden="true" class="e-font-icon-svg e-fas-truck-pickup" viewBox="0 0 640 512"
+xmlns="http://www.w3.org/2000/svg">
+<path
+d="M624 288h-16v-64c0-17.67-14.33-32-32-32h-48L419.22 56.02A64.025 64.025 0 0 0 369.24 32H256c-17.67 0-32 14.33-32 32v128H64c-17.67 0-32 14.33-32 32v64H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h49.61c-.76 5.27-1.61 10.52-1.61 16 0 61.86 50.14 112 112 112s112-50.14 112-112c0-5.48-.85-10.73-1.61-16h67.23c-.76 5.27-1.61 10.52-1.61 16 0 61.86 50.14 112 112 112s112-50.14 112-112c0-5.48-.85-10.73-1.61-16H624c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM288 96h81.24l76.8 96H288V96zM176 416c-26.47 0-48-21.53-48-48s21.53-48 48-48 48 21.53 48 48-21.53 48-48 48zm288 0c-26.47 0-48-21.53-48-48s21.53-48 48-48 48 21.53 48 48-21.53 48-48 48z">
+</path>
+</svg>
+</div>
+</body>
+
+</html>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
 style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
 <defs>
@@ -2888,7 +2943,7 @@ data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 data-id="52f26638" data-element_type="widget" data-widget_type="text-editor.default">
 <div class="elementor-widget-container">
 <p>
-<span<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="kk">
 <head>
 <meta charset="UTF-8">
@@ -2946,7 +3001,7 @@ font-family: Roboto, -apple-system, 'apple color emoji', BlinkMacSystemFont, 'Se
 </div>
 </body>
 </html>
->
+<
 </p>
 </div>
 </div>
